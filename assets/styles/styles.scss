@@ -77,6 +77,17 @@ body {
   &:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  &:hover {
+    background-color: #c5f82a;
+    .social-list__link {
+      color: #141414;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .social-list__link {
@@ -92,5 +103,13 @@ body {
 
   a {
     color: #3e52a3;
+
+    &:hover {
+      color: #c5f82a;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }

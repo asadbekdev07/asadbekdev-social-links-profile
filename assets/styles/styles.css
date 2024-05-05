@@ -65,6 +65,15 @@ body {
 .social-list__item:not(:last-child) {
   margin-bottom: 15px;
 }
+.social-list__item:hover {
+  background-color: #c5f82a;
+}
+.social-list__item:hover .social-list__link {
+  color: #141414;
+}
+.social-list__item:active {
+  opacity: 0.6;
+}
 
 .social-list__link {
   text-decoration: none;
@@ -79,4 +88,10 @@ body {
 }
 .attribution a {
   color: #3e52a3;
+}
+.attribution a:hover {
+  color: #c5f82a;
+}
+.attribution a:active {
+  opacity: 0.6;
 }/*# sourceMappingURL=styles.css.map */
