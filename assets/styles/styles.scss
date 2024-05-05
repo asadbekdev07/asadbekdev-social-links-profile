@@ -11,50 +11,66 @@ $font-family: 'Inter', 'Arial', sans-serif;
   box-sizing: border-box;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
-  padding-top: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  min-height: 100vh;
   @include flex-center;
   background-color: #141414;
   font-family: $font-family;
 }
 
 .profile {
-  @include flex-center;
-  padding: 30px;
-  margin-bottom: 20px;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 375px;
-  background-color: #1f1f1f;
+
+  &__container {
+    @include flex-center;
+    padding: 43px 30px 42px 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 425px;
+    background-color: #1f1f1f;
+  }
 
   &__img {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 50%;
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 400;
     color: $color-white;
   }
 
   &__location {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 17px;
     color: #c5f82a;
   }
 
   &__occupation {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
     color: $color-white;
   }
 }
 
 .social-list__item {
-  padding: 10px;
+  padding: 17.5px;
   background-color: #333333;
-  width: 300px;
+  width: 340px;
   border-radius: 8px;
   text-align: center;
 
